@@ -1,10 +1,4 @@
-main .form-register .botons {
-  width: 100%;
-  padding: 12px;
-  margin: 16px 0;
-  font-size: 16px;
-  border: none;
-}
+
 
 * {
   margin: 0;
@@ -135,6 +129,13 @@ main .form-register .controls {
   border: 1px solid #3b3b3b;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
+}
+main .form-register .botons {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+  border: none;
 }
 main .form-register .botons {
   background: rgb(107, 107, 223);
