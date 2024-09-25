@@ -1,0 +1,241 @@
+header {
+    background-color: $color-principal;
+    display: flex;
+
+    nav {
+        div {
+            .container-fluid {
+               @include flex;
+            }
+
+
+            .imglogo {
+                width: 180px;
+                height: 180px;
+            }
+
+
+
+            .navbar-toggler {
+                margin-right: 50px;
+                padding: 0.25rem 0.75rem;
+                color: grey;
+                border-color: grey;
+                background-color: $color-segundario;
+            }
+
+            div {
+                .navbar-collapse {
+                    flex-grow: 0;
+                }
+
+                ul {
+                    .navbar-nav {
+                        font-size: 18px;
+                    }
+
+                    .nav-link,
+                    .navbar-nav {
+                        color: $color-segundario;
+                    }
+
+                    .nav-link i{
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// main
+
+main {
+    background-color: $color-main;
+    overflow: hidden;
+
+    div {
+        h1 {
+            color: black;
+            font-size: 4rem;
+            font-family: "Permanent Marker";
+        }
+
+        img {
+            height: 70%;
+            width: 100%;
+        }
+
+        .parrafo {
+            text-align: center;
+            color: $color-principal;
+            font-size: 1.1rem;
+            margin: 20px;
+            padding: 15px;
+        }
+
+    }
+
+    //galeria
+    div {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            margin: 20px 0;
+
+            img {
+                width: 23%;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+
+    .main-conci {
+        display: flex;
+    }
+
+    .conciertos {
+        width: 400px;
+        background: #3b3b3b;
+        padding: 30px;
+        margin: 20px;
+        margin-top: 100px;
+        border-radius: 4px;
+
+        img {
+            width: 180px;
+            margin-top: 10px;
+        }
+
+        .h2bandera {
+            font-family: "Permanent Marker";
+            font-weight: 400;
+            font-style: normal;
+            color: $color-principal;
+            font-weight: bold;
+        }
+
+        .p-conci {
+            font-size: 12px;
+            color: $color-main;
+            font-weight: bold;
+            font-family: "Nerko One";
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+
+    //discografia
+    .main {
+        column-gap: 50px;
+    }
+
+
+
+    //formulario
+
+
+    .form-register {
+        width: 400px;
+        background: #3b3b3b;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: $color-segundario;
+        margin-bottom: 50px;
+
+        h4 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+
+        .controls {
+            width: 100%;
+            background: $color-segundario;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #3b3b3b;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+
+        .botons {
+            @extend %estilos-botons;
+            background: rgb(107, 107, 223);
+            color: $color-segundario;
+        }
+
+
+        p {
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        a {
+            color: $color-segundario;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $color-segundario;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+//footer
+footer {
+    text-align: center;
+    color: $color-segundario;
+    background-color: $color-principal;
+    margin-top: 0;
+    clear: both;
+    height: 100px;
+    padding: 10px;
+
+    .contenidofooter {
+        font-size: 1rem;
+    }
+
+    .footer3 {
+        font-size: 1rem;
+    }
+}
+
+
+//tamaño pantalla tablet
+@media (max-width: 1024px) {
+    .row img {
+        width: 31%;
+    }
+
+    .main-conci {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+//tamaño pantalla mobile
+@media (max-width: 768px) {
+    .row img {
+        width: 48%;
+    }
+
+    .main-conci {
+        width: 90%;
+    }
+}

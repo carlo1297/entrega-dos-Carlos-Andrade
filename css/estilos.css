@@ -1,251 +1,191 @@
-* {
-    margin: 0;
-    padding: 0;
+main .form-register .botons {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+  border: none;
+}
 
+* {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: black;
-    display: flex;
+  background-color: black;
+  display: flex;
 }
-
-.container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header nav div .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.navbar-nav {
-    font-size: 18px;
+header nav div .imglogo {
+  width: 180px;
+  height: 180px;
 }
-
-
-.nav-link i {
-    margin-right: 8px;
+header nav div .navbar-toggler {
+  margin-right: 50px;
+  padding: 0.25rem 0.75rem;
+  color: grey;
+  border-color: grey;
+  background-color: whitesmoke;
 }
-
-
-.navbar-toggler {
-    margin-right: 50px;
-    padding: 0.25rem 0.75rem;
-    color: grey;
-    border-color: grey;
-    background-color: whitesmoke;
-
+header nav div div .navbar-collapse {
+  flex-grow: 0;
 }
-
-
-.nav-item .nav-link {
-    color: whitesmoke;
+header nav div div ul .navbar-nav {
+  font-size: 18px;
 }
-
-.navbar-collapse {
-    flex-grow: 0;
+header nav div div ul .nav-link,
+header nav div div ul .navbar-nav {
+  color: whitesmoke;
 }
-
-.imglogo {
-    width: 180px;
-    height: 180px;
+header nav div div ul .nav-link i {
+  margin-right: 8px;
 }
-
-
-
-
-
-/* main  home*/
 
 main {
-    background-color: rgb(190, 190, 143);
-    overflow: hidden;
-
+  background-color: rgb(190, 190, 143);
+  overflow: hidden;
+}
+main div h1 {
+  color: black;
+  font-size: 4rem;
+  font-family: "Permanent Marker";
+}
+main div img {
+  height: 70%;
+  width: 100%;
+}
+main div .parrafo {
+  text-align: center;
+  color: black;
+  font-size: 1.1rem;
+  margin: 20px;
+  padding: 15px;
+}
+main div .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+main div .row img {
+  width: 23%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main .main-conci {
+  display: flex;
+}
+main .conciertos {
+  width: 400px;
+  background: #3b3b3b;
+  padding: 30px;
+  margin: 20px;
+  margin-top: 100px;
+  border-radius: 4px;
+}
+main .conciertos img {
+  width: 180px;
+  margin-top: 10px;
+}
+main .conciertos .h2bandera {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-weight: bold;
+}
+main .conciertos .p-conci {
+  font-size: 12px;
+  color: rgb(190, 190, 143);
+  font-weight: bold;
+  font-family: "Nerko One";
+  font-weight: 400;
+  font-style: normal;
+}
+main .main {
+  column-gap: 50px;
+}
+main .form-register {
+  width: 400px;
+  background: #3b3b3b;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+main .form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+main .form-register .controls {
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #3b3b3b;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+main .form-register .botons {
+  background: rgb(107, 107, 223);
+  color: whitesmoke;
+}
+main .form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+main .form-register a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+main .form-register a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
-.img-01 {
-    height: 70%;
-    width: 100%;
-}
-
-h1 {
-    color: black;
-    font-size: 4rem;
-    font-family: "Permanent Marker";
-}
-
-.parrafo {
-    text-align: center;
-    color: black;
-    font-size: 1.1rem;
-    margin: 20px;
-    padding: 15px;
-
-}
-
-/* main galeria */
-.row img {
-    width: 23%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-
-
-
-/* main cociertos */
-.p-conci {
-    font-size: 1rem;
-    color: rgb(224, 203, 132);
-    font-weight: bold;
-
-    font-family: "Nerko One";
-    font-weight: 400;
-    font-style: normal;
-}
-
-.h2bandera {
-    font-family: "Permanent Marker";
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-    font-weight: bold;
-}
-
-.conciertos {
-
-    width: 400px;
-    background: #3b3b3b;
-    padding: 30px;
-    margin: 20px;
-    margin-top: 100px;
-    border-radius: 4px;
-
-}
-
-.conciertos img {
-    width: 180px;
-    margin-top: 10px;
-}
-
-.main-conci {
-    display: flex;
-}
-
-.main {
-    column-gap: 50px;
-
-}
-
-.content-nomi {
-    display: flex;
-}
-
-
-/* main formularios */
-.form-register {
-    width: 400px;
-    background: #3b3b3b;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin-bottom: 50px;
-
-}
-
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.controls {
-    width: 100%;
-    background: white;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #3b3b3b;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-
-.form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.form-register a {
-    color: white;
-    text-decoration: none;
-
-}
-
-.form-register a:hover {
-    color: white;
-    text-decoration: underline;
-
-}
-
-.form-register .botons {
-    width: 100%;
-    background: rgb(107, 107, 223);
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px, 0;
-    font-size: 16px;
-}
-
-
-
-/* footer */
 footer {
-    text-align: center;
-    color: whitesmoke;
-    background-color: black;
-    margin-top: 0;
-    clear: both;
-    height: 100px;
-    padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  margin-top: 0;
+  clear: both;
+  height: 100px;
+  padding: 10px;
+}
+footer .contenidofooter {
+  font-size: 1rem;
+}
+footer .footer3 {
+  font-size: 1rem;
 }
 
-.contenidofooter {
-    font-size: 1rem;
-}
-
-.footer3 {
-    font-size: 1rem;
-}
-
-/* tamaño pantalla tablet */
 @media (max-width: 1024px) {
-    .row img {
-        width: 31%;
-    }
-
-    .main-conci{
-        flex-direction: column;
-        align-items: center;
-    }
+  .row img {
+    width: 31%;
+  }
+  .main-conci {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-/* tamaño de pantalla mobile */
 @media (max-width: 768px) {
-    .row img {
-        width: 48%;
-    }
-
-    .main-conci{
-        width: 90%;
-    }
+  .row img {
+    width: 48%;
+  }
+  .main-conci {
+    width: 90%;
+  }
 }
+
+/*# sourceMappingURL=estilos.css.map */
