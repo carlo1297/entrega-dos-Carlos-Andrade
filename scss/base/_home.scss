@@ -5,16 +5,18 @@ header {
     nav {
         div {
             .container-fluid {
-               @include flex;
+                @include flex;
             }
-
 
             .imglogo {
                 width: 180px;
                 height: 180px;
+                transition: transform 0.3s ease-in-out;
             }
 
-
+            .imglogo:hover {
+                transform: scale(1.1);
+            }
 
             .navbar-toggler {
                 margin-right: 50px;
@@ -39,7 +41,11 @@ header {
                         color: $color-segundario;
                     }
 
-                    .nav-link i{
+                    .nav-link:hover {
+                        background-color: $color-segundario ;
+                    }
+
+                    .nav-link i {
                         margin-right: 8px;
                     }
                 }
@@ -60,6 +66,20 @@ main {
             color: black;
             font-size: 4rem;
             font-family: "Permanent Marker";
+            opacity: 0;
+            animation: fadein 2s forwards;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                transform: translate(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
         }
 
         img {
@@ -71,7 +91,7 @@ main {
             text-align: center;
             color: $color-principal;
             font-size: 1.1rem;
-            margin: 20px;
+            margin: 40px;
             padding: 15px;
         }
 
@@ -91,10 +111,16 @@ main {
                 height: auto;
                 border-radius: 5px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                filter: grayscale(50%);
             }
         }
     }
-
 
     .main-conci {
         display: flex;
@@ -111,6 +137,12 @@ main {
         img {
             width: 180px;
             margin-top: 10px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: translateY(-10px) scale(1.1);
         }
 
         .h2bandera {
@@ -119,6 +151,19 @@ main {
             font-style: normal;
             color: $color-principal;
             font-weight: bold;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s forwards;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .p-conci {
@@ -238,4 +283,10 @@ footer {
     .main-conci {
         width: 90%;
     }
+
+    .img-main {
+        object-fit: cover;
+    }
+
+
 }
